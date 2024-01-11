@@ -13,8 +13,11 @@ const Board = () =>{
   const winner = calculateWinner(history)
 
   const handlePlay = (i) =>{
-    if (history[i] || winner || !playerX || !playerO) {
+    if ( !playerX || !playerO) {
       alert("Please Input Player Name!!")
+      return;
+    }
+    if (history[i] || winner){
       return;
     }
     const nextSquare = history.slice();
