@@ -55,12 +55,10 @@ const Board = () =>{
   </div>
   <p>{winner && `winner is : ${winner === 'x' ? playerX :playerO} `}</p>
     </div>
-    <PlayerInputs
-        playerX={playerX}
-        playerO={playerO}
-        setPlayerX={setPlayerX}
-        setPlayerO={setPlayerO}
+    <PlayerInputs playerX={playerX} playerO={playerO}
+     setPlayerX={setPlayerX} setPlayerO={setPlayerO}
       />
+      
     </div>
   )
 }
